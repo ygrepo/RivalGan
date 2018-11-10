@@ -1,0 +1,59 @@
+Running SVM vs GAN scores report
+Shape of the data=(284807, 31)
+Columns: 
+ Index(['Time', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10',
+       'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20',
+       'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'Amount',
+       'Class'],
+      dtype='object')
+Head: 
+        Time        V1        V2        V3        V4        V5        V6  \
+0 -2.495776 -0.760474 -0.059825  1.778510  0.998741 -0.282036  0.366454   
+1 -2.495776  0.645665  0.177226  0.108889  0.326641  0.047566 -0.064642   
+2 -2.495729 -0.759673 -0.946238  1.240864  0.277228 -0.418463  1.425391   
+
+         V7        V8        V9  ...         V21       V22       V23  \
+0  0.234118  0.091669  0.343867  ...   -0.027953  0.392914 -0.259567   
+1 -0.078505  0.077453 -0.237661  ...   -0.405091 -0.908272  0.228784   
+2  0.775964  0.247431 -1.420257  ...    0.456138  1.094031  2.092428   
+
+        V24       V25       V26       V27       V28    Amount  Class  
+0  0.111992  0.253257 -0.396610  0.399584 -0.090140  1.130025      0  
+1 -0.569582  0.329670  0.267951 -0.031113  0.069997 -1.138642      0  
+2 -1.155079 -0.649083 -0.291089 -0.171222 -0.263354  1.695499      0  
+
+[3 rows x 31 columns]
+Number of frauds in training data: 379 out of 213605 cases (0.1774303036% fraud)
+Number of frauds in test data: 113 out of 71202 cases (0.1587034072% fraud)
+Loading classifier SGDClassifier from file /home/ubuntu/insight/cache/SGDClassifier_Fraud.pkl
+Number of features=30
+
+ ############################################# BASELINE REPORT #############################################
+Classification Report: 
+                    pre       rec       spe        f1       geo       iba       sup
+
+          0       1.00      0.95      0.92      0.97      0.93      0.88     71089
+          1       0.03      0.92      0.95      0.05      0.93      0.87       113
+
+avg / total       1.00      0.95      0.92      0.97      0.93      0.88     71202
+
+Accuracy score: 0.949762647116654
+Precision score: 0.9203539823008849
+Recall score: 0.02832244008714597
+F1 score: 0.05495376486129458
+
+ ############################################# GAN (DATA AUGMENTATION) REPORT #############################################
+Classification Report: 
+                    pre       rec       spe        f1       geo       iba       sup
+
+          0       1.00      1.00      0.81      1.00      0.90      0.83     71089
+          1       0.28      0.81      1.00      0.41      0.90      0.80       113
+
+avg / total       1.00      1.00      0.81      1.00      0.90      0.83     71202
+
+Accuracy score: 0.996320328080672
+Precision score: 0.8141592920353983
+Recall score: 0.27627627627627627
+F1 score: 0.4125560538116592
+Average precision-recall score: 0.701
+Average precision-recall score: 0.654

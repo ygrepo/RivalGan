@@ -1,0 +1,18 @@
+Baseline classifier SVC
+Loading classifier SVC from file /home/ubuntu/insight/cache/SVC_Fraud.pkl
+Predicting 30 features
+Classification Report:
+                    pre       rec       spe        f1       geo       iba       sup
+
+          0       1.00      1.00      0.58      1.00      0.76      0.61     71089
+          1       0.94      0.58      1.00      0.72      0.76      0.56       113
+
+avg / total       1.00      1.00      0.58      1.00      0.76      0.61     71202
+
+Accuracy score: 0.999283727985169
+Precision score: 0.584070796460177
+Recall score: 0.9428571428571428
+F1 score: 0.7213114754098361
+Confusion Matrix:
+ [[71085     4]
+ [   47    66]]
