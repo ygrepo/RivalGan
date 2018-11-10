@@ -206,13 +206,13 @@ Generator loss: 0.3018853962421417 | discriminator loss: 1.5490034818649292
 
 ## Visualizing the Data Augmentation Process
 
-<p align="left"><img width=60% src="https://github.com/InsightDataCommunity/Rival-AI.NY-18C/blob/master/images/5KPrecisionRecallCurves.png"></p>
+<p align="left"><img width=60% src="https://github.com/ygrepo/RivalGan/images/5KPrecisionRecallCurves.png"></p>
 
-<p align="center"><img width=60% src="https://github.com/InsightDataCommunity/Rival-AI.NY-18C/blob/master/images/DataDistributionComparison100K.png"></p>
+<p align="center"><img width=60% src="https://github.com/ygrepo/RivalGan/images/DataDistributionComparison100K.png"></p>
 
-<p align="center"><img width=60% src="https://github.com/InsightDataCommunity/Rival-AI.NY-18C/blob/master/images/ScoresWithIncreasingFakeData.png"></p>
+<p align="center"><img width=60% src="https://github.com/ygrepo/RivalGan/images/ScoresWithIncreasingFakeData.png"></p>
 
-<p align="center"><img width=60% src="https://github.com/InsightDataCommunity/Rival-AI.NY-18C/blob/master/images/OVOSVMAugData.png"></p>
+<p align="center"><img width=60% src="https://github.com/ygrepo/RivalGan/images/OVOSVMAugData.png"></p>
 
 
 ------------
